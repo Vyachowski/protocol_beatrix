@@ -6,27 +6,39 @@ import {
 	NLayoutFooter,
 	NLayoutHeader,
 	NSpace,
+  NText,
+  NFlex,
 } from "naive-ui";
 </script>
 
 <template>
   <n-space vertical size="large">
-    <n-layout>
+    <n-layout class="layout" content-style="display: grid; grid-template-rows: auto 1fr auto;">
       <n-layout-header>
-        <router-link class="logo-link" :to="{ name: 'home' }">
+        <router-link class="link" :to="{ name: 'home' }">
           <app-logo />
         </router-link>
       </n-layout-header>
       <n-layout-content content-style="padding: 24px;">
         
       </n-layout-content>
-      <n-layout-footer>Chengfu Road</n-layout-footer>
+      <n-layout-footer>
+        <n-flex justify="center">
+          <n-text class="slogan"> 
+            Box Bunny: Make your meal prep funny!
+          </n-text>
+        </n-flex>
+      </n-layout-footer>
     </n-layout>
   </n-space>
 </template>
 
 <style scoped>
-  .logo-link {
+  .layout {
+    height: 100dvh;
+  }
+
+  .link {
     display: block;
     width: 120px;
   }
@@ -34,5 +46,9 @@ import {
   .n-layout-header,
   .n-layout-footer {
     padding: 24px;
+  }
+
+  .slogan {
+    text-align: center;
   }
 </style>

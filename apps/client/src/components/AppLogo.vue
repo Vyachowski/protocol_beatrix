@@ -1,6 +1,6 @@
 <template>
   <p class="logo">
-    <img src="../assets/logo.webp" alt="Box bunny Logo. Make the meal prep funny!" />
+    <img src="../assets/logo.webp" alt="Box Bunny Logo." />
   </p>
 </template>
 
