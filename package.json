@@ -8,7 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run dev --ws",
+    "format": "npx @biomejs/biome check --write apps/*/src/*"
   },
   "repository": {
     "type": "git",
