@@ -13,8 +13,8 @@ import {
 
 <template>
   <n-space vertical size="large">
-    <n-layout class="layout" content-style="display: grid; grid-template-rows: auto 1fr auto;">
-      <n-layout-header>
+    <n-layout class="layout">
+      <n-layout-header position="static">
         <router-link class="link" :to="{ name: 'home' }">
           <app-logo />
         </router-link>
