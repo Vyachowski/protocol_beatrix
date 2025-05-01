@@ -1,0 +1,23 @@
+{
+  "name": "eaty",
+  "version": "1.0.0",
+  "description": "Weekly meal prep helper",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vyachowski/eaty.git"
+  },
+  "keywords": ["healthy diet", "meal prep"],
+  "author": "Slava Haikin",
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/Vyachowski/eaty/issues"
+  },
+  "homepage": "https://github.com/Vyachowski/eaty#readme"
+}
