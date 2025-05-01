@@ -1,10 +1,10 @@
 <template>
   <p class="logo">
-    <img src="../assets/logo.webp" alt="Box Bunny Logo." />
+    <img src="@/assets/logo.webp" alt="Box Bunny Logo." />
   </p>
 </template>
 
-<style lang="css" scoped>
+<style scoped>
   .logo {
     width: 100%;
     height: 100%;

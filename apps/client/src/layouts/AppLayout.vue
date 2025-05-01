@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import AppLogo from "@/components/AppLogo.vue";
 import {
+	NFlex,
 	NLayout,
 	NLayoutContent,
 	NLayoutFooter,
 	NLayoutHeader,
 	NSpace,
-  NText,
-  NFlex,
+	NText,
 } from "naive-ui";
 </script>
 
@@ -20,7 +20,7 @@ import {
         </router-link>
       </n-layout-header>
       <n-layout-content content-style="padding: 24px;">
-        
+        <RouterView />
       </n-layout-content>
       <n-layout-footer>
         <n-flex justify="center">
