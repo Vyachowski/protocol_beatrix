@@ -1,6 +1,7 @@
 {
   "name": "eaty",
   "version": "1.0.0",
+  "private": true,
   "description": "Weekly meal prep helper",
   "workspaces": [
     "apps/*",
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/Vyachowski/eaty/issues"
   },
-  "homepage": "https://github.com/Vyachowski/eaty#readme"
+  "homepage": "https://github.com/Vyachowski/eaty#readme",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.14.0",
+    "npm-run-all2": "^7.0.2",
+    "typescript": "~5.8.0"
+  }
 }
