@@ -114,8 +114,8 @@ const recipes = [
 	},
 ];
 
-export const generateMenuForWeek = () => {
-	return Array.from({ length: 7 }, () => ({
+export const generateMenu = () => {
+	return {
 		[MealTime.STARTER]: recipes.find(
 			(recipe) => recipe.mealTime === MealTime.STARTER,
 		),
@@ -134,7 +134,7 @@ export const generateMenuForWeek = () => {
 		[MealTime.SNACK]: recipes.find(
 			(recipe) => recipe.mealTime === MealTime.SNACK,
 		),
-	}));
+	};
 };
 
 export default recipes;

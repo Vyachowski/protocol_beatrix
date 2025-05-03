@@ -1,5 +1,5 @@
 {
-  "name": "eaty",
+  "name": "protocol_beatrix",
   "version": "0.0.0",
   "private": true,
   "description": "Weekly meal prep helper",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vyachowski/eaty.git"
+    "url": "git+https://github.com/Vyachowski/protocol-beatrix.git"
   },
   "keywords": ["healthy diet", "meal prep"],
   "author": "Slava Haikin",
   "license": "CC-BY-NC-ND-4.0",
   "bugs": {
-    "url": "https://github.com/Vyachowski/eaty/issues"
+    "url": "https://github.com/Vyachowski/protocol-beatrix/issues"
   },
-  "homepage": "https://github.com/Vyachowski/eaty#readme",
+  "homepage": "https://github.com/Vyachowski/protocol-beatrix#readme",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@tsconfig/node22": "^22.0.1",
