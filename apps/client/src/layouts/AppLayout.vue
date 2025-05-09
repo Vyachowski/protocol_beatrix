@@ -13,14 +13,14 @@ import {
 
 <template>
   <n-space vertical size="large">
-    <n-layout class="layout">
-      <n-layout-header position="static">
+    <n-layout>
+      <n-layout-header>
         <router-link class="link" :to="{ name: 'home' }">
           <app-logo />
         </router-link>
       </n-layout-header>
       <n-layout-content content-style="padding: 24px;">
-        <RouterView />
+        <router-view />
       </n-layout-content>
       <n-layout-footer>
         <n-flex justify="center">
@@ -34,10 +34,6 @@ import {
 </template>
 
 <style scoped>
-  .layout {
-    height: 100dvh;
-  }
-
   .link {
     display: block;
     width: 120px;
