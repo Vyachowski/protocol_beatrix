@@ -8,9 +8,12 @@ import {
 	NTabPane,
 	NTabs,
 	NText,
+  NList,
+  NListItem,
+  NThing,
 } from "naive-ui";
 
-const { menu } = defineProps<{ menu: Meal[] }>();
+const { menu, groceryList } = defineProps<{ menu: Meal[], groceryList: any[] }>();
 </script>
 
 <template>
@@ -31,10 +34,29 @@ const { menu } = defineProps<{ menu: Meal[] }>();
       </n-tab-pane>
 
       <n-tab-pane name="grocery-list" tab="Grocery List">
-        List:
+         <n-space vertical>
+          <n-list>
+            <n-list-item v-for="item in groceryList">
+              <n-thing :title="item.department">
+                <n-text v-for="position in item.items">{{ position.name }} {{ `${position.quantity} ${position.unit}` }}<br></n-text>
+              </n-thing>
+            </n-list-item>
+          </n-list>
+        </n-space>
       </n-tab-pane>
+
       <n-tab-pane name="preparation" tab="Preparation">
-        Cooking
+        <n-space vertical>
+          <n-grid x-gap="12" y-gap="12" cols="1 500:2 750:3 1000:4 1250:5">
+            <n-grid-item v-for="(meal) in menu">
+              <n-card :title="meal.mealTime">
+                <n-space vertical>
+                  <n-text>{{ meal.preparation }}</n-text>
+                </n-space>
+              </n-card>
+            </n-grid-item>
+          </n-grid>
+        </n-space>
       </n-tab-pane>
     </n-tabs>
   </main>

@@ -1,7 +1,6 @@
 export enum MealTime {
 	STARTER = "STARTER",
 	BREAKFAST = "BREAKFAST",
-	BRUNCH = "BRUNCH",
 	LUNCH = "LUNCH",
 	SNACK = "SNACK",
 	DINNER = "DINNER",
@@ -20,6 +19,7 @@ export enum WeekDays {
 export interface Meal {
     mealTime: MealTime;
     title: string;
+	calories: number;
     ingredients: string[];
     preparation: string;
 }
