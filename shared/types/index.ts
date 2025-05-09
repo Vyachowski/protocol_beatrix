@@ -16,3 +16,12 @@ export enum WeekDays {
 	SATURDAY = 5,
 	SUNDAY = 6,
 }
+
+export interface Meal {
+    mealTime: MealTime;
+    title: string;
+    ingredients: string[];
+    preparation: string;
+}
+
+export type Menu = Record<MealTime, Meal>;

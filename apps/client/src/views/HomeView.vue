@@ -1,9 +1,11 @@
 <script setup lang="ts">
 
-import { generatedMenu } from "@/api";
+import type { Meal } from "@shared";
 import { NCard, NGrid, NGridItem, NH1, NText,  NSpace, NTabPane, NTabs } from "naive-ui";
 
-const dayMenu = Object.values(generatedMenu);
+const { menu } = defineProps<{ menu: Meal[] }>()
+
+console.log(menu);
 </script>
 
 <template>
@@ -13,7 +15,7 @@ const dayMenu = Object.values(generatedMenu);
         <n-h1>Week Menu</n-h1>
         <n-space vertical>
           <n-grid x-gap="12" y-gap="12" cols="1 500:2 750:3 1000:4 1250:5">
-            <n-grid-item v-for="(meal) in dayMenu">
+            <n-grid-item v-for="(meal) in menu">
               <n-card :title="meal?.mealTime">
                 <n-space vertical>
                   <n-text>{{ meal?.title }}</n-text>

@@ -1,4 +1,4 @@
-import { MealTime } from '@shared';
+import { MealTime, type Meal, type Menu } from '@shared';
 
 const recipes = [
 	{
@@ -120,4 +120,4 @@ const generateMenu = () => {
 	};
 };
 
-export const generatedMenu = generateMenu();
+export const generatedMenu = generateMenu() as Menu;

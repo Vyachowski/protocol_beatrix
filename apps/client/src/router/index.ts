@@ -1,5 +1,5 @@
 import AppLayout from "@/layouts/AppLayout.vue";
-import HomeView from "@/views/HomeView.vue";
+import AppInitializer from "@/components/AppInitializer.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -14,7 +14,7 @@ const router = createRouter({
 				{
 					path: "",
 					name: "home",
-					component: HomeView,
+					component: AppInitializer,
 				},
 			],
 		},
