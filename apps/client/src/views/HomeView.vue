@@ -1,7 +1,15 @@
 <script setup lang="ts">
-
 import type { Meal } from "@shared";
-import { NCard, NGrid, NGridItem, NH1, NText,  NSpace, NTabPane, NTabs } from "naive-ui";
+import {
+	NCard,
+	NGrid,
+	NGridItem,
+	NH1,
+	NSpace,
+	NTabPane,
+	NTabs,
+	NText,
+} from "naive-ui";
 
 const { menu } = defineProps<{ menu: Meal[] }>();
 </script>

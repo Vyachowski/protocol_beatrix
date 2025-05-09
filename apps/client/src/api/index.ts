@@ -1,4 +1,4 @@
-import { MealTime, type Meal, type Menu } from '@shared';
+import { type Meal, MealTime, type Menu } from "@shared";
 
 const recipes = [
 	{

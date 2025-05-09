@@ -1,5 +1,5 @@
-import AppLayout from "@/layouts/AppLayout.vue";
 import AppInitializer from "@/components/AppInitializer.vue";
+import AppLayout from "@/layouts/AppLayout.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
