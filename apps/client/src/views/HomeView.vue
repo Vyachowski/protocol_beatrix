@@ -4,7 +4,6 @@ import {
 	NCard,
 	NGrid,
 	NGridItem,
-	NH1,
 	NSpace,
 	NTabPane,
 	NTabs,
