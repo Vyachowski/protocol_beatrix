@@ -1,3 +1,9 @@
-# eaty
+# Protocol Beatrix
 
-Weekly meal prep helper
+
+## Run
+
+To start client:
+``` bash
+npm run dev
+```

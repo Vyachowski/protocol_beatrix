@@ -1,21 +1,4 @@
-export enum MealTime {
-	STARTER = "STARTER",
-	BREAKFAST = "BREAKFAST",
-	BRUNCH = "BRUNCH",
-	LUNCH = "LUNCH",
-	SNACK = "SNACK",
-	DINNER = "DINNER",
-}
-
-export enum WeekDays {
-	MONDAY = 0,
-	TUESDAY = 1,
-	WEDNESDAY = 2,
-	THURSDAY = 3,
-	FRIDAY = 4,
-	SATURDAY = 5,
-	SUNDAY = 6,
-}
+import { MealTime } from '@shared';
 
 const recipes = [
 	{
@@ -114,7 +97,7 @@ const recipes = [
 	},
 ];
 
-export const generateMenu = () => {
+const generateMenu = () => {
 	return {
 		[MealTime.STARTER]: recipes.find(
 			(recipe) => recipe.mealTime === MealTime.STARTER,
@@ -137,4 +120,4 @@ export const generateMenu = () => {
 	};
 };
 
-export default recipes;
+export const generatedMenu = generateMenu();
