@@ -1,0 +1,33 @@
+{
+  "name": "protocol_beatrix",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Weekly meal prep helper",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run dev --ws",
+    "format": "npx @biomejs/biome check --write apps/*/src/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vyachowski/protocol-beatrix.git"
+  },
+  "keywords": ["healthy diet", "meal prep"],
+  "author": "Slava Haikin",
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/Vyachowski/protocol-beatrix/issues"
+  },
+  "homepage": "https://github.com/Vyachowski/protocol-beatrix#readme",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.14.0",
+    "npm-run-all2": "^7.0.2",
+    "typescript": "~5.8.0"
+  }
+}
