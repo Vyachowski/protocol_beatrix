@@ -7,7 +7,7 @@ import { RouterView } from "vue-router";
 </template>
 
 <style lang="css" global>
-  body, #app {
-    min-height: 100vh;
+  html, body, #app {
+    height: 100%;
   }
 </style>
