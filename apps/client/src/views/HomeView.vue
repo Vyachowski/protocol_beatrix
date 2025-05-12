@@ -65,7 +65,6 @@ const { menu, groceryList } = defineProps<{ menu: Meal[], groceryList: any[] }>(
 <style scoped>
   .content {
     padding: 24px;
-    /* max-width: 1024px; */
     margin: 0 auto;
   }
 </style>
