@@ -11,6 +11,7 @@ import {
   NList,
   NListItem,
   NThing,
+  NH2,
 } from "naive-ui";
 
 const { menu, groceryList } = defineProps<{ menu: Meal[], groceryList: any[] }>();
@@ -23,13 +24,24 @@ const { menu, groceryList } = defineProps<{ menu: Meal[], groceryList: any[] }>(
         <n-space vertical>
           <n-grid x-gap="12" y-gap="12" cols="1 500:2 750:3 1000:4 1250:5">
             <n-grid-item v-for="(meal) in menu">
-              <n-card :title="meal?.mealTime">
+              <n-card :title="meal?.mealTime" style="height: 100%;">
+                <template #cover>
+                  <img :src="meal.img" :alt="`${meal?.mealTime} image.`">
+                </template>
                 <n-space vertical>
                   <n-text>{{ meal?.title }}</n-text>
                 </n-space>
               </n-card>
             </n-grid-item>
           </n-grid>
+          <n-space vertical style="padding-top: 2rem">
+            <n-h2>
+              Summary
+            </n-h2>
+            <n-text>
+              Calories: {{ menu.reduce((sum, { calories }) => sum + calories, 0) }} CCal
+            </n-text>
+          </n-space>
         </n-space>
       </n-tab-pane>
 

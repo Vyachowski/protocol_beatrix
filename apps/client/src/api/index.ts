@@ -1,4 +1,5 @@
 import { MealTime, type Menu } from "@shared";
+import overnightOats from '@/assets/meals/overnight-oats-recipe.webp';
 
 // export const drafts = [
 	// {
@@ -51,7 +52,8 @@ const recipes = [
 			"Ice cubes (optional)"
 		],
 		calories: 350,
-		preparation: "Place almond milk in the blender first, then add banana, yogurt, spinach, oats, chia seeds, berries, and cauliflower. Blend starting on low, then high for ~30 s until smooth. Adjust thickness with extra almond milk or ice. Serve immediately."
+		preparation: "Place almond milk in the blender first, then add banana, yogurt, spinach, oats, chia seeds, berries, and cauliflower. Blend starting on low, then high for ~30 s until smooth. Adjust thickness with extra almond milk or ice. Serve immediately.",
+		img: overnightOats,
 	},
 	{
 		mealTime: MealTime.BREAKFAST,
@@ -69,7 +71,8 @@ const recipes = [
 			"1 tsp vanilla extract (optional)"
 		],
 		calories: 650,
-		preparation: "In a jar or bowl, whisk together milk, Greek yogurt, peanut butter, chia seeds, and vanilla until smooth. Stir in oats. Refrigerate overnight (or at least 4 hours). In the morning, swirl in the strawberry chia jam, top with sliced berries and roasted peanuts, and enjoy cold."
+		preparation: "In a jar or bowl, whisk together milk, Greek yogurt, peanut butter, chia seeds, and vanilla until smooth. Stir in oats. Refrigerate overnight (or at least 4 hours). In the morning, swirl in the strawberry chia jam, top with sliced berries and roasted peanuts, and enjoy cold.",
+		img: overnightOats,
 	},
 	{
 		mealTime: MealTime.LUNCH,
@@ -89,6 +92,7 @@ const recipes = [
 		calories: 550,
 		preparation:
 			"Marinate and grill the chicken. Cook rice. Sauté and steam vegetables. Serve following the Harvard Plate model.",
+		img: overnightOats,
 	},
 	{
 		mealTime: MealTime.SNACK,
@@ -102,6 +106,7 @@ const recipes = [
 		calories: 250,
 		preparation:
 			"Combine yogurt and berries, top with chopped walnuts and a drizzle of honey if desired.",
+			img: overnightOats,
 	},
 	{
 		mealTime: MealTime.DINNER,
@@ -124,6 +129,7 @@ const recipes = [
 		calories: 420,
 		preparation:
 			"Cook quinoa. Sauté vegetables and cook omelet. Serve with fresh salad dressed with olive oil and lemon juice.",
+		img: overnightOats,
 	},
 ];
 

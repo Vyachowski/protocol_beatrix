@@ -22,6 +22,7 @@ export interface Meal {
 	calories: number;
     ingredients: string[];
     preparation: string;
+	img: string;
 }
 
 export type Menu = Record<MealTime, Meal>;
