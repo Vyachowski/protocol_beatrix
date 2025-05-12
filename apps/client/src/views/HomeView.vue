@@ -17,7 +17,7 @@ const { menu, groceryList } = defineProps<{ menu: Meal[], groceryList: any[] }>(
 </script>
 
 <template>
-  <main>
+  <main class="content">
     <n-tabs type="segment" animated>
       <n-tab-pane name="menu" tab="Menu">
         <n-space vertical>
@@ -63,7 +63,9 @@ const { menu, groceryList } = defineProps<{ menu: Meal[], groceryList: any[] }>(
 </template>
 
 <style scoped>
-  .select {
-    width: 100px;
+  .content {
+    padding: 24px;
+    /* max-width: 1024px; */
+    margin: 0 auto;
   }
 </style>
