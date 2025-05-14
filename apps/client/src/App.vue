@@ -10,4 +10,8 @@ import { RouterView } from "vue-router";
   html, body, #app {
     height: 100%;
   }
+
+  html {
+    overflow-y: scroll;
+  }
 </style>
